@@ -42,9 +42,9 @@ return (
                        <InputBox
                            label="From"
                            amount={amount}
-                           CurrenyOptions={options}
+                           CurrencyOptions={options}
                            onCurrencyChange={(currency) => setAmount(amount)}
-                           selectCurreny={from}
+                           selectCurrency={from}
                            onAmountChange={(amount) => setAmount(amount)}
                            
                        />
@@ -63,16 +63,16 @@ return (
                        <InputBox
                             label="To"
                             amount={convertedAmount}
-                            CurrenyOptions={options}
-                            onCurrencyChange={(currency) =>
-                         setTo(currency)}
-                         selectCurreny={from}
+                            CurrencyOptions={options}
+                            onCurrencyChange={(currency) => setTo(currency)}
+                            selectCurrency={to}
                          amountDisable
                            
                        />
                    </div>
                    <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
-                   Convert {from.toUpperCase()} to {to.toUpperCase()}                   </button>
+                   Convert {from.toUpperCase()} to {to.toUpperCase()}            
+                    </button>
                </form>
            </div>
        </div>
